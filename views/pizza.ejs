@@ -13,10 +13,10 @@
 		<h1><%= pizza.nome %> </h1>
 		<h2><%=pizza.preco%> </h2>
 		<img src="<%=pizza.img%>"alt="<%=pizza.nome%> ">
-		<div><%=pizza.ingrediente%> </div>
+		<div><%=pizza.ingredientes%> </div>
 		<button>+ Add</button>
-		<a href="pizza.html" class="prev">&lt;</a>
-		<a href="pizza.html" class="next">&gt;</a>
+		<a href="/pizzas/<%=idAnterior%>" class="prev">&lt;</a>
+		<a href="/pizzas/<%=idProximo%>" class="next">&gt;</a>
 	</main>
 </body>
 </html>

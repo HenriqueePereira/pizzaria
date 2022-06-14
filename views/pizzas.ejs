@@ -16,7 +16,7 @@
 		<button type="submit">Buscar</button>
 	</form>
 
-	<% if(pizzas.lenght > 0) %>
+	<% if(pizzas.length > 0) { %>
 
 	<main>
 		<% for(let p of pizzas) { %>
@@ -30,9 +30,10 @@
 		<% } %>
 	</main>
 
-	<!--
+	<% } else { %>
 	<div class="pizza-nao-encontrada">Nenhuma pizza encontrada. Tente ser menos específico na sua busca.</div>
-	-->
+
+	<% } %>
 
 </body>
 

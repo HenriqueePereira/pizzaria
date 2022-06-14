@@ -8,8 +8,8 @@ const router = express.Router();
 
 //criando rota get
 router.get("/", PizzasController.listar);
-router.get("/pizzas/:id", PizzasController.mostrar);
 router.get("/pizzas/busca", PizzasController.buscar);
+router.get("/pizzas/:id", PizzasController.mostrar);
 
 
 // exportando roteador
